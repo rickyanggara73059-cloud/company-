@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Truck,
@@ -20,7 +19,7 @@ export const Footer: React.FC = () => {
         <div className="footer-brand">
           <div className="footer-logo">
             <Truck size={22} strokeWidth={2} />
-            <span>PT Nama Perusahaan</span>
+            <span>PT. ALTRAN GUNA USAHA</span>
           </div>
 
           <p>
@@ -46,6 +45,7 @@ export const Footer: React.FC = () => {
           <a href="#home">Beranda</a>
           <a href="#about">Tentang Kami</a>
           <a href="#services">Layanan</a>
+          <a href="#fleet">Armada</a>
           <a href="#why-us">Keunggulan</a>
           <a href="#partners">Mitra & Klien</a>
           <a href="#contact">Kontak</a>
@@ -59,9 +59,9 @@ export const Footer: React.FC = () => {
           <a href="#services">Transportasi Darat</a>
           <a href="#services">Pengiriman Barang</a>
           <a href="#services">Distribusi Logistik</a>
-          <a href="#services">Manajemen Armada</a>
-          <a href="#services">Pergudangan</a>
-          <a href="#services">Door to Door Delivery</a>
+          <a href="#services">Project Cargo</a>
+          <a href="#services">Sewa Armada</a>
+          <a href="#services">Pindahan Rumah & Kantor</a>
         </div>
 
 
@@ -71,17 +71,32 @@ export const Footer: React.FC = () => {
 
           <div className="footer-contact-item">
             <MessageCircle size={17} />
-            <span>+62 8XX XXXX XXXX</span>
+
+            <a
+              href="https://wa.me/6281122226808"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              +62 811-2222-6808
+            </a>
           </div>
 
           <div className="footer-contact-item">
             <Mail size={17} />
-            <span>info@namaperusahaan.com</span>
+
+            <a href="mailto:altran.gunausaha@gmail.com">
+              altran.gunausaha@gmail.com
+            </a>
           </div>
 
           <div className="footer-contact-item">
             <MapPin size={17} />
-            <span>Alamat perusahaan</span>
+
+            <span>
+              Jl. Diponegoro No. 50,
+              Waringin Agung, Gambiran,
+              Banyuwangi – Jawa Timur
+            </span>
           </div>
         </div>
 
@@ -93,7 +108,7 @@ export const Footer: React.FC = () => {
         <div className="footer-bottom-container">
 
           <p>
-            © {currentYear} PT Nama Perusahaan.
+            © {currentYear} PT. ALTRAN GUNA USAHA.
             Semua hak dilindungi.
           </p>
 
@@ -107,4 +122,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-
