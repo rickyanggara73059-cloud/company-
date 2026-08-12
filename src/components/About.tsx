@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   ShieldCheck,
@@ -18,13 +17,13 @@ export const About: React.FC = () => {
       icon: Truck,
       title: "Armada Handal",
       description:
-        "Didukung armada yang siap operasional untuk memenuhi kebutuhan distribusi.",
+        "Didukung armada pickup, Fuso, Colt Diesel, dan Long Bed yang dirawat dan diremajakan secara berkala.",
     },
     {
       icon: Users,
       title: "Tim Profesional",
       description:
-        "Ditangani oleh tenaga profesional yang mengutamakan kualitas pelayanan.",
+        "Didukung tim yang profesional dan berpengalaman dalam memberikan layanan transportasi dan logistik.",
     },
   ];
 
@@ -38,20 +37,40 @@ export const About: React.FC = () => {
           </span>
 
           <h2>
-            Solusi Transportasi & Logistik
-            <span> untuk Kebutuhan Bisnis</span>
+            PT. ALTRAN GUNA USAHA
+            <span> Solusi Transportasi & Logistik</span>
           </h2>
 
           <p>
-            Kami adalah perusahaan yang bergerak di bidang transportasi
-            dan logistik dengan komitmen memberikan layanan pengiriman
-            yang aman, cepat, dan terpercaya.
+            PT. ALTRAN GUNA USAHA adalah perusahaan yang bergerak
+            pada bidang jasa sarana angkutan/transportasi yang
+            terintegrasi, dalam menangani pengiriman barang,
+            pindahan rumah dan kantor.
           </p>
 
           <p>
-            Dengan dukungan armada yang handal dan tenaga profesional,
-            kami membantu memenuhi kebutuhan distribusi barang untuk
-            berbagai sektor bisnis.
+            Kami telah bergerak dalam bidang Ekspedisi sejak tahun
+            2017 untuk melayani konsumen dengan berbagai pengiriman
+            secara pribadi. Atas tingginya permintaan dan motivasi
+            untuk menjadi lebih baik, pada tahun 2022 didirikan
+            PT. ALTRAN GUNA USAHA dengan fokus pada bisnis pengiriman
+            barang.
+          </p>
+
+          <p>
+            Kami menggunakan armada pickup, Fuso, Colt Diesel, dan
+            Long Bed. Penambahan, perawatan, dan peremajaan unit
+            dilakukan secara berkala untuk memastikan ketepatan
+            waktu pengiriman barang, kondisi barang saat diterima,
+            serta kepuasan customer terhadap pelayanan PT. ALTRAN.
+          </p>
+
+          <p>
+            Dengan didukung oleh tim yang profesional dan
+            berpengalaman, kami siap bersaing dalam memberikan
+            layanan jasa transportasi logistik serta senantiasa
+            memberikan solusi terbaik untuk membantu kebutuhan dan
+            keinginan pelanggan kami.
           </p>
         </div>
 
@@ -78,4 +97,3 @@ export const About: React.FC = () => {
     </section>
   );
 };
-

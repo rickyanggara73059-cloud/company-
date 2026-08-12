@@ -24,10 +24,11 @@ export const Hero: React.FC = () => {
         </h1>
 
         <p>
-          Solusi transportasi dan logistik profesional untuk
-          mendukung kebutuhan distribusi bisnis Anda secara
-          aman, efisien, dan terpercaya.
-        </p>
+  PT. ALTRAN GUNA USAHA merupakan perusahaan jasa
+  transportasi dan ekspedisi yang melayani pengiriman
+  barang serta kebutuhan pindahan rumah dan kantor
+  dengan dukungan armada yang handal dan tim profesional.
+</p>
 
         <div className="hero-button">
           <button>

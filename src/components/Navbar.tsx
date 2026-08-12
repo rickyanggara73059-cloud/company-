@@ -9,9 +9,13 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <h2 className="navbar-logo">PT Nama Perusahaan</h2>
+      <div className="navbar-brand">
+        <a href="#home" onClick={closeMenu} className="navbar-logo">
+          <strong>PT. ALTRAN GUNA USAHA</strong>
+          <span>TRANSPORTATION & LOGISTICS</span>
+        </a>
+      </div>
 
-      {/* Tombol hamburger mobile */}
       <button
         className="menu-toggle"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -21,7 +25,6 @@ export const Navbar: React.FC = () => {
         {menuOpen ? "✕" : "☰"}
       </button>
 
-      {/* Menu */}
       <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
         <li>
           <a href="#home" onClick={closeMenu}>
@@ -56,6 +59,16 @@ export const Navbar: React.FC = () => {
         <li>
           <a href="#contact" onClick={closeMenu}>
             Kontak
+          </a>
+        </li>
+
+        <li className="nav-cta-wrapper">
+          <a
+            href="#contact"
+            onClick={closeMenu}
+            className="nav-cta"
+          >
+            Hubungi Kami
           </a>
         </li>
       </ul>

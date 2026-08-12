@@ -1,42 +1,19 @@
-
 import React from "react";
-import {
-  Factory,
-  Truck,
-  Store,
-  Boxes,
-} from "lucide-react";
 
 export const Partners: React.FC = () => {
   const partners = [
-    {
-      number: "01",
-      title: "Perusahaan Manufaktur",
-      description:
-        "Mendukung kebutuhan transportasi dan distribusi produk industri.",
-      icon: Factory,
-    },
-    {
-      number: "02",
-      title: "Distributor Nasional",
-      description:
-        "Membantu kelancaran distribusi ke berbagai wilayah Indonesia.",
-      icon: Truck,
-    },
-    {
-      number: "03",
-      title: "Perusahaan Retail",
-      description:
-        "Menunjang kebutuhan pengiriman dan distribusi produk retail.",
-      icon: Store,
-    },
-    {
-      number: "04",
-      title: "Pelaku Industri",
-      description:
-        "Menyediakan solusi transportasi sesuai kebutuhan operasional.",
-      icon: Boxes,
-    },
+    "PT. Titian Anugerah Jaya",
+    "PT. Bosag Anugerah Sukses",
+    "Putra Jaya Tekhnik",
+    "PT. Adhi Putra Jaya Tekhnik",
+    "Cahaya Kembar Tekhnik",
+    "PT. Pama Persada Nusantara",
+    "PT. Indomarco Prismatama",
+    "PT. Arkananta Apta Prastista",
+    "PT. Sinergi Argo Industri",
+    "PT. Chipta Paratama",
+    "PT. Sefas Pelindo Utama",
+    "PT. Borneo Investama Mandiri",
   ];
 
   return (
@@ -61,39 +38,29 @@ export const Partners: React.FC = () => {
         </div>
 
         <div className="partner-list">
-          {partners.map((partner) => {
-            const Icon = partner.icon;
-
-            return (
-              <div
-                className="partner-item"
-                key={partner.number}
-              >
-                <div className="partner-top">
-                  <span className="partner-number">
-                    {partner.number}
-                  </span>
-
-                  <div className="partner-icon">
-                    <Icon
-                      size={24}
-                      strokeWidth={1.8}
-                    />
-                  </div>
-                </div>
-
-                <div className="partner-content">
-                  <h3>{partner.title}</h3>
-
-                  <p>{partner.description}</p>
-                </div>
+          {partners.map((partner, index) => (
+            <div
+              className="partner-item"
+              key={partner}
+            >
+              <div className="partner-top">
+                <span className="partner-number">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
               </div>
-            );
-          })}
+
+              <div className="partner-content">
+                <h3>{partner}</h3>
+
+                <p>
+                  Mitra PT. ALTRAN GUNA USAHA
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
       </div>
     </section>
   );
 };
-

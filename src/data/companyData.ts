@@ -6,26 +6,40 @@ export const companyData = {
     "[NAMA PERUSAHAAN] adalah perusahaan yang bergerak di bidang transportasi dan logistik dengan fokus memberikan solusi pengiriman yang aman, tepat waktu, dan efisien.",
 
   established: "[TAHUN BERDIRI]",
+
   address: "[ALAMAT PERUSAHAAN]",
+
   phone: "[NOMOR TELEPON]",
+
   whatsapp: "[NOMOR WHATSAPP]",
+
   email: "[EMAIL PERUSAHAAN]",
+
+  website: "[WEBSITE PERUSAHAAN]",
+
   serviceArea: "Seluruh Indonesia",
 
   about: {
-    title: "Tentang Kami",
-    description:
-      "[NAMA PERUSAHAAN] hadir untuk memberikan solusi transportasi dan logistik yang dapat diandalkan oleh berbagai sektor industri. Dengan mengutamakan keamanan, ketepatan waktu, dan kualitas pelayanan, kami berkomitmen menjadi mitra logistik jangka panjang bagi setiap pelanggan.",
-  },
+  title: "Tentang Kami",
 
-  customers: [
-    "Perusahaan Manufaktur",
-    "Perkebunan",
-    "Pertambangan",
-    "Konstruksi",
-    "Distributor",
-    "Retail",
-  ],
+  description:
+    "PT. ALTRAN GUNA USAHA adalah perusahaan yang bergerak di bidang jasa sarana angkutan/transportasi yang terintegrasi dalam menangani pengiriman barang serta pindahan rumah dan kantor. Kami telah bergerak di bidang ekspedisi sejak tahun 2017 untuk melayani berbagai kebutuhan pengiriman secara personal. Tingginya permintaan dari konsumen menjadi motivasi bagi kami untuk terus berkembang dan memberikan pelayanan yang lebih baik. Pada tahun 2022, didirikan PT. ALTRAN GUNA USAHA dengan fokus pada layanan pengiriman barang menggunakan armada pickup, Fuso, Colt Diesel, dan Long Bed. Penambahan, perawatan, serta peremajaan unit dilakukan secara berkala untuk memastikan ketepatan waktu pengiriman, menjaga kondisi barang saat diterima, serta meningkatkan kepuasan pelanggan. Dengan didukung oleh tim yang profesional dan berpengalaman, kami siap memberikan layanan jasa transportasi dan logistik serta senantiasa memberikan solusi terbaik untuk memenuhi kebutuhan pelanggan.",
+},
+
+  partners: [
+  "PT. Titian Anugerah Jaya",
+  "PT. Bosag Anugerah Sukses",
+  "Putra Jaya Tekhnik",
+  "PT. Adhi Putra Jaya Tekhnik",
+  "Cahaya Kembar Tekhnik",
+  "PT. Pama Persada Nusantara",
+  "PT. Indomarco Prismatama",
+  "PT. Arkananta Apta Prastista",
+  "PT. Sinergi Argo Industri",
+  "PT. Chipta Paratama",
+  "PT. Sefas Pelindo Utama",
+  "PT. Borneo Investama Mandiri",
+],
 
   usp: [
     {
@@ -103,12 +117,12 @@ export const companyData = {
   ],
 
   vision:
-    "Menjadi mitra logistik terpercaya yang memberikan solusi transportasi dan distribusi terbaik bagi pelanggan.",
+  "Menjadi perusahaan penyedia jasa transportasi yang dapat diandalkan, dipercaya, dan terkemuka di Indonesia.",
 
-  mission: [
-    "Memberikan layanan logistik yang aman dan tepat waktu.",
-    "Mengutamakan kepuasan pelanggan.",
-    "Mengembangkan sumber daya manusia yang profesional.",
-    "Meningkatkan kualitas operasional secara berkelanjutan.",
-  ],
+mission: [
+  "Menjadi solusi penyedia jasa transportasi bagi para pelaku bisnis.",
+  "Membantu dan mempermudah pelanggan dalam melakukan pindahan rumah dan kantor.",
+  "Selalu mengutamakan dan mengedepankan pelayanan secara profesional kepada setiap pelanggan.",
+  "Menjaga dan memelihara hubungan kerja yang baik dengan pelanggan maupun mitra kerja.",
+],
 };

@@ -30,46 +30,194 @@ body {
 
 
 /* =========================
-   NAVBAR
+   PREMIUM NAVBAR
 ========================= */
 
-nav {
+.navbar {
   width: 100%;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background: white;
+  justify-content: space-between;
+
+  padding: 16px 60px;
+
+  background: rgba(255, 255, 255, 0.96);
+
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow:
+    0 4px 18px rgba(15, 23, 42, 0.06);
+
+  backdrop-filter: blur(12px);
 }
 
-nav h2 {
-  font-size: 24px;
-  font-weight: 700;
-  white-space: nowrap;
-}
 
-nav ul {
+/* BRAND */
+
+.navbar-brand {
   display: flex;
   align-items: center;
-  gap: 30px;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+
+  line-height: 1.1;
+}
+
+.navbar-logo strong {
+  color: #0b2740;
+
+  font-size: 19px;
+  font-weight: 800;
+
+  letter-spacing: -0.3px;
+}
+
+.navbar-logo span {
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* MENU */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
 
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 600;
-  white-space: nowrap;
+.nav-menu li {
+  list-style: none;
 }
 
-nav a:hover {
+.nav-menu a {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  color: #334155;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-menu a:hover {
   color: #2563eb;
+}
+
+
+/* ACTIVE / HOVER LINE */
+
+.nav-menu a:not(.nav-cta)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: 999px;
+
+  background: #2563eb;
+
+  transition: width 0.25s ease;
+}
+
+.nav-menu a:not(.nav-cta):hover::after {
+  width: 100%;
+}
+
+
+/* CTA */
+
+.nav-cta-wrapper {
+  margin-left: 4px;
+}
+
+.nav-menu .nav-cta {
+  padding: 10px 18px;
+
+  border-radius: 7px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 18px rgba(37, 99, 235, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nav-menu .nav-cta:hover {
+  background: #1d4ed8;
+
+  color: #ffffff;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 22px rgba(37, 99, 235, 0.28);
+}
+
+.nav-menu .nav-cta::after {
+  display: none;
+}
+
+
+/* MOBILE BUTTON */
+
+.menu-toggle {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  color: #0b2740;
+
+  font-size: 25px;
+
+  cursor: pointer;
 }
 
 
@@ -2443,5 +2591,83 @@ nav a:hover {
 
   .nav-menu li:last-child a {
     border-bottom: none;
+  }
+}
+
+/* =========================
+   NAVBAR MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 15px 24px;
+  }
+
+  .navbar-logo strong {
+    font-size: 16px;
+  }
+
+  .navbar-logo span {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 10px 20px 20px;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    border-top: 1px solid rgba(15, 23, 42, 0.06);
+
+    box-shadow:
+      0 12px 25px rgba(15, 23, 42, 0.10);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    width: 100%;
+
+    padding: 13px 4px;
+
+    font-size: 14px;
+  }
+
+  .nav-menu a:not(.nav-cta)::after {
+    display: none;
+  }
+
+  .nav-cta-wrapper {
+    margin: 8px 0 0;
+  }
+
+  .nav-menu .nav-cta {
+    justify-content: center;
+
+    padding: 12px 18px;
   }
 }

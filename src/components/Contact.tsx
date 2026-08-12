@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   MessageCircle,
@@ -24,14 +23,17 @@ export const Contact: React.FC = () => {
 
           <p>
             Siap membantu kebutuhan transportasi dan logistik
-            perusahaan Anda. Hubungi tim kami untuk mendiskusikan
-            kebutuhan pengiriman dan distribusi bisnis Anda.
+            perusahaan Anda. Hubungi tim PT. ALTRAN GUNA USAHA
+            untuk mendiskusikan kebutuhan pengiriman, distribusi,
+            maupun pindahan rumah dan kantor.
           </p>
         </div>
 
         <div className="contact-content">
 
           <div className="contact-info">
+
+            {/* WHATSAPP */}
 
             <div className="contact-item">
               <div className="contact-icon">
@@ -42,11 +44,20 @@ export const Contact: React.FC = () => {
               </div>
 
               <div>
-                <span>WhatsApp</span>
-                <h3>+62 8XX XXXX XXXX</h3>
-                <p>Hubungi kami melalui WhatsApp</p>
+                <span>WhatsApp / Phone</span>
+
+                <h3>
+                  +62 811-2222-6808
+                </h3>
+
+                <p>
+                  Hubungi tim kami melalui WhatsApp
+                </p>
               </div>
             </div>
+
+
+            {/* EMAIL */}
 
             <div className="contact-item">
               <div className="contact-icon">
@@ -58,10 +69,19 @@ export const Contact: React.FC = () => {
 
               <div>
                 <span>Email</span>
-                <h3>info@namaperusahaan.com</h3>
-                <p>Kirim pertanyaan melalui email</p>
+
+                <h3>
+                  altran.gunausaha@gmail.com
+                </h3>
+
+                <p>
+                  Kirim pertanyaan melalui email
+                </p>
               </div>
             </div>
+
+
+            {/* OFFICE */}
 
             <div className="contact-item">
               <div className="contact-icon">
@@ -72,19 +92,81 @@ export const Contact: React.FC = () => {
               </div>
 
               <div>
-                <span>Alamat</span>
-                <h3>Alamat perusahaan</h3>
-                <p>Lokasi kantor akan ditambahkan</p>
+                <span>Office</span>
+
+                <h3>
+                  Banyuwangi
+                </h3>
+
+                <p>
+                  Jl. Diponegoro No. 50,
+                  Waringin Agung, Gambiran,
+                  Banyuwangi – Jawa Timur
+                </p>
+              </div>
+            </div>
+
+
+            {/* BRANCH BALIKPAPAN */}
+
+            <div className="contact-item">
+              <div className="contact-icon">
+                <MapPin
+                  size={24}
+                  strokeWidth={1.8}
+                />
+              </div>
+
+              <div>
+                <span>Branch Office</span>
+
+                <h3>
+                  Balikpapan
+                </h3>
+
+                <p>
+                  Jl. Mulawarman, Ruko Mulawarman
+                  Asri No. 5D, Manggar, Balikpapan
+                </p>
+              </div>
+            </div>
+
+
+            {/* BRANCH DEPOK */}
+
+            <div className="contact-item">
+              <div className="contact-icon">
+                <MapPin
+                  size={24}
+                  strokeWidth={1.8}
+                />
+              </div>
+
+              <div>
+                <span>Branch Office</span>
+
+                <h3>
+                  Depok
+                </h3>
+
+                <p>
+                  Jl. Raden Saleh, Depok
+                </p>
               </div>
             </div>
 
           </div>
 
 
+          {/* CTA */}
+
           <div className="contact-cta">
 
             <div className="contact-cta-content">
-              <span>SIAP BERKOLABORASI?</span>
+
+              <span>
+                SIAP BERKOLABORASI?
+              </span>
 
               <h3>
                 Konsultasikan kebutuhan
@@ -92,23 +174,26 @@ export const Contact: React.FC = () => {
               </h3>
 
               <p>
-                Tim kami siap membantu memberikan solusi
-                transportasi dan distribusi yang sesuai
-                dengan kebutuhan bisnis Anda.
+                Tim PT. ALTRAN GUNA USAHA siap membantu
+                memberikan solusi transportasi dan distribusi
+                yang sesuai dengan kebutuhan bisnis Anda.
               </p>
 
               <a
-                href="https://wa.me/628XXXXXXXXXX"
+                href="https://wa.me/6281122226808"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-button"
               >
                 <MessageCircle size={19} />
 
-                <span>Chat WhatsApp</span>
+                <span>
+                  Chat WhatsApp
+                </span>
 
                 <ArrowUpRight size={18} />
               </a>
+
             </div>
 
           </div>
@@ -119,4 +204,3 @@ export const Contact: React.FC = () => {
     </section>
   );
 };
-
